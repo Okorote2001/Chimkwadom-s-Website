@@ -38,7 +38,7 @@ async function checkWeather(city) {
     document.querySelector('.windSpeed').innerHTML = data.wind.speed +'  km/h';
 
     const weatherData = data.weather[0].main;
-    weatherIcon.src = "image/" + weatherData + ".png";
+    weatherIcon.src = "image/" + weatherData.charAt(0).toUpperCase() + weatherData.slice(1).toLowerCase() + ".png";
 
     document.querySelector(".weatherDetails").style.display = "block";
 
