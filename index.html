@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+	<link rel="stylesheet" href="weather.css">
+</head>
+<body>
+    <div class="body">
+        <div class="wheatherApp">
+            <div class="inputField">
+                <input type="text" placeholder="Enter City">
+                <button> 
+                    <img src="image/search.png" alt="NA">
+                </button>
+            </div>
+            <div class="error">
+                <p>City Not Found</p>
+            </div>
+            <div class="weatherDetails">
+                <div class="centerContent">
+                    <div class="countryTemp">            
+                        <img src="image/rain.png" alt="NA" class="weatherIcon">
+                        <h1 class="temp">25°C</h1>
+                        <h2 class="city">Lagos</h2>
+                    </div>
+                    <div class="humidWind">
+                        <div class="indHumWInd">                
+                            <img src="image/humidity.png" alt="NA">
+                            <div class="d">
+                                <h3 class="humidity">48%</h3>
+                                <h5>Humidity</h5>                   
+                            </div>    
+                        </div>
+                        <div class="indHumWInd">                
+                            <img src="image/wind.png" alt="NA">
+                            <div class="d">
+                                <h3 class="windSpeed">10.29 km/hr</h3>
+                                <h5>Wind Speed</h5>
+                            </div>
+                        </div>              
+                    </div>
+                </div>
+            </div>   
+        </div>
+    </div>
+    <script src="weather.js"></script>
+</body>
+</html>
